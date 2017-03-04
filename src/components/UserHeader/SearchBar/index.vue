@@ -9,7 +9,7 @@
         </form>
 
         <ul class="dropdown-menu dropdown-menu-lg" id="search-result">
-            <search-item tag="li" v-for="item in getAllData" key="n" :item="item"></search-item>
+            <search-item tag="li" v-for="item in data" key="n" :item="item"></search-item>
             <li class="text-center" v-if="searching">
                 <i class="fa fa-spinner fa-spin"></i>
             </li>
@@ -36,11 +36,6 @@
             }
         },
         computed: {
-            ...mapGetters('search', [
-                'getData', // map this.$store.getters['search/getData'] => getData
-                'getKeyword' // map this.$store.getters['search/Keyword'] => getKeyword
-
-            ]),
           ...mapState('search',[
               'data',
             'keyword',

@@ -15,8 +15,9 @@
             <h4 id="video-title" class="text-dark header-title m-t-0">Cắt HTML,CSS từ file PSD phần 1</h4>
             <!-- 16:9 aspect ratio -->
             <div class="embed-responsive" :style="getPlayerHeight">
-                <iframe class="embed-responsive-item"
-                        src="http://player.vimeo.com/video/69988283?color=5fbeaa&amp;title=0&amp;byline=0&amp;portrait=0"></iframe>
+                <!--<iframe class="embed-responsive-item"-->
+                        <!--src="http://player.vimeo.com/video/69988283?color=5fbeaa&amp;title=0&amp;byline=0&amp;portrait=0"></iframe>-->
+           <!---->
             </div>
 
             <quiz-button type="done" message="Luyện tập quiz"></quiz-button>
@@ -96,7 +97,6 @@
         },
         mounted() {
 //            this.$store.dispatch('resize/checkResizeMode');
-            this.checkResizeMode()//
             this.$nextTick(function ()
             {
                 const vm = this

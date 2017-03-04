@@ -26,19 +26,7 @@
   </head>
   <body>
     <div id="app">
-      <user-header></user-header>
-      <!--<div class="main-content">-->
-        <!--<div class="left-content" style="width: 60%; height: 1px; float: left;"></div>-->
-        <!--<div class="right-content" style="width: 40%;float: left;">-->
-          <!--<tab-sidebar></tab-sidebar>-->
-        <!--</div>-->
-      <!--</div>-->
-      <main-content></main-content>
-      <user-footer></user-footer>
 
-      <!--leaderboard-->
-      <leader-board></leader-board>
-      <!--end leaderboard-->
     </div>
 
     <script
@@ -51,7 +39,7 @@
     <script src="static/js/waves.js" type="text/javascript" ></script>
     <script src="static/js/wow.min.js" type="text/javascript"></script>
     <script>
-      var wow = new WOW(
+      let wow = new WOW(
               {
                 boxClass: 'wow', // animated element css class (default is wow)
                 animateClass: 'animated', // animation css class (default is animated)
